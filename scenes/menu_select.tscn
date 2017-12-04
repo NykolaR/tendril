@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/audio/select.wav" type="AudioStream" id=1]
+[ext_resource path="res://assets/audio/play.wav" type="AudioStream" id=2]
+
+[node name="sounds" type="Node"]
+
+[node name="select" type="AudioStreamPlayer" parent="."]
+
+stream = ExtResource( 1 )
+volume_db = -6.0
+autoplay = false
+mix_target = 0
+bus = "sfx"
+
+[node name="play" type="AudioStreamPlayer" parent="."]
+
+stream = ExtResource( 2 )
+volume_db = -6.0
+autoplay = false
+mix_target = 0
+bus = "sfx"
+
+
